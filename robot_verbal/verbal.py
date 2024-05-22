@@ -1,8 +1,13 @@
 # pip install gTTS
 from gtts import gTTS
 
-tts = gTTS('Hello, I am a robot! my name is pedro.')
+tts = gTTS('Olá, eu sou um robô! Meu nome é Maria. Como posso te ajudar?', lang ="pt",)
 tts.save('hello.mp3')
+
+# pip install python-vlc
+import vlc
+p = vlc.MediaPlayer("hello.mp3")
+p.play()
 
 ##################################################
 
