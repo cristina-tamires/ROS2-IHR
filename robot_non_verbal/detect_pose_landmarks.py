@@ -1,6 +1,8 @@
 # Fonte: https://ai.google.dev/edge/mediapipe/solutions/vision/pose_landmarker?hl=pt-br
 
 # pip install mediapipe
+# pip install opencv-python-headless
+# pip install opencv-python
 # wget -O tasks/pose_landmarker.task -q https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_heavy/float16/1/pose_landmarker_heavy.task
 # wget -q -O input_images/input_pose.jpg https://cdn.pixabay.com/photo/2019/03/12/20/39/girl-4051811_960_720.jpg
 
@@ -26,4 +28,4 @@ detection_result = detector.detect(image)
 
 # STEP 5: Process the detection result. In this case, visualize it.
 annotated_image = draw_landmarks_on_image(image.numpy_view(), detection_result)
-cv2.imwrite("output_images/output_pose.jpg", cv2.cvtColor(annotated_image, cv2.COLOR_RGB2BGR)) 
+cv2.imwrite("output_images/output_pose2.jpg", cv2.cvtColor(annotated_image, cv2.COLOR_RGB2BGR)) 
