@@ -77,4 +77,4 @@ def display_batch_of_images_with_gestures_and_hand_landmarks(images, results):
     plt.tight_layout()
     plt.subplots_adjust(wspace=SPACING, hspace=SPACING)
     plt.show()
-    plt.savefig('output_images/output_gesture.png')
+    plt.savefig('output_images/output_gesture2.png')
